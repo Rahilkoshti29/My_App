@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/off"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/login_image"
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:background="@drawable/login_295128"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+            android:id="@+id/login_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="Login"
+            android:textSize="50dp"
+    />
+
+    <EditText
+            android:id="@+id/username"
+            android:drawableLeft="@drawable/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_id"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_centerHorizontal="true"
+            android:width="360dp"
+            android:background="@drawable/custom_border"
+            android:inputType="textEmailAddress"
+            android:textSize="28dp"
+            android:hint="username"
+            android:textColor="@color/black"
+        />
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_below="@id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        >
+
+    <EditText
+            android:id="@+id/password"
+            android:drawableLeft="@drawable/password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_border"
+            android:width="355dp"
+            android:layout_marginLeft="35dp"
+            android:inputType="textPassword"
+            android:textSize="30dp"
+            android:hint="password"
+            android:textColor="@color/black"
+    />
+    <ImageView
+            android:id="@+id/main_pass_show"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/show"
+            android:visibility="gone"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center|end"
+    />
+    <ImageView
+            android:id="@+id/main_pass_hide"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hide"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center|end"
+        />
+            
+            
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_frame"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="serif"
+        android:text="Login"
+        android:textSize="30dp"
+        app:backgroundTint="@null"
+    />
+
+        <TextView
+            android:id="@+id/dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alata"
+            android:text="Don't have an account ?"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dont_have_account"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/abeezee_italic"
+            android:text="Register"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+
+
+
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
